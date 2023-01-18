@@ -1,0 +1,62 @@
+:root {
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturared-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    /* display: flex;
+    flex-direction: column; */
+    background-color: var(--very-pale-blue);
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 400px;
+    height: 600px;
+    border-radius: 20px;
+    margin: 30px;
+}
+
+.card-img {
+    max-width:100%;
+    object-fit: contain;
+}
+
+.card-container #card-info {
+    text-align: center;
+    margin: 16px;
+}
+
+.card-container #card-info h2 {
+    font-size: 24px;
+}
+
+.card-container #card-info p {
+    font-size: 16px;
+    margin-left: 12px;
+    margin-right: 12px;
+    color: var(--desaturared-blue);
+}
+
+.card-container .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 16px;
+}
+
+.card-container .item p {
+    display: block;
+}
+
+.card-container .card-buttons {
+    display: block;
+}
